@@ -16,7 +16,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/ravipandhi/commonLib")
             credentials {
                 username = "ravipandhi"
-                password = "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"
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
@@ -28,13 +28,6 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
-    maven("https://maven.pkg.github.com/commonLib") {
-        name = "GitHubPackages"
-        credentials {
-            username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN")
-        }
-    }
 }
 
 dependencies {
