@@ -16,7 +16,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/ravipandhi/commonLib")
             credentials {
                 username = "ravipandhi"
-                password = System.getenv("GITHUB_TOKEN")
+                password = System.getenv("MY_TOKEN")
             }
         }
     }
