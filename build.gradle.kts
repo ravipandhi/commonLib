@@ -13,10 +13,10 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/commonLib")
+            url = uri("https://maven.pkg.github.com/ravipandhi/commonLib")
             credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                username = "ravipandhi"
+                password = "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"
             }
         }
     }
